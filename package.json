@@ -1,5 +1,5 @@
 {
-  "name": "frontend-project-lvl1",
+  "name": "brain-games-liza",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -29,5 +29,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
