@@ -9,5 +9,4 @@ export const sayHelloWorld = () => {
     console.log("Hello world!");
 };
 
-
 // export default sayHello;
