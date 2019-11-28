@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import { sayHello } from '..';
+import { getUserName } from '..';
 
-sayHello();
+getUserName();
 
 console.log('Welcome to the Brain Games!');
