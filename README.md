@@ -15,3 +15,7 @@ This is my first project
 
 [![Build Status](https://travis-ci.org/kazakova-liza/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/kazakova-liza/frontend-project-lvl1)
 
+## Установка пакета и запуск игры brain-even
+
+[![asciicast](https://asciinema.org/a/wFxOh9G0waheWp7FY3E2uYt5V.svg)](https://asciinema.org/a/wFxOh9G0waheWp7FY3E2uYt5V)
+
