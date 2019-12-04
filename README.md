@@ -19,3 +19,8 @@ This is my first project
 
 [![asciicast](https://asciinema.org/a/wFxOh9G0waheWp7FY3E2uYt5V.svg)](https://asciinema.org/a/wFxOh9G0waheWp7FY3E2uYt5V)
 
+
+## Установка пакета и запуск игры brain-calc
+
+[![asciicast](https://asciinema.org/a/9B9KSgdA2IyfirHtuvUvl6Y3q.svg)](https://asciinema.org/a/9B9KSgdA2IyfirHtuvUvl6Y3q)
+
