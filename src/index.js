@@ -71,5 +71,34 @@ export const getRightAnswerCalculator = (number1, number2, operatorNumber) => {
   if (operatorNumber === 3) {
     return number1 * number2;
   }
-}
-;
+};
+
+export const showTwoRandomNumbers = (number1, number2) => {
+  console.log(`${number1} ${number2}`);
+};
+
+export const getRightAnswerGcd = (number1, number2) => {
+  if (number1 === number2) {
+    return number1;
+  }
+  if (number1 > number2 && number1 % number2 === 0) {
+    return number2;
+  }
+  if (number2 > number1 && number2 % number1 === 0) {
+    return number1;
+  }
+  if (number1 > number2 && number1 % number2 !== 0) {
+    for (let dividor = number2 - 1; dividor > 0; dividor--) {
+      if (number2 % dividor === 0 && number1 % dividor === 0) {
+        return dividor;
+      }
+    }
+  }
+  if (number2 > number1 && number2 % number1 !== 0) {
+    for (let dividor = number1 - 1; dividor > 0; dividor--) {
+      if (number1 % dividor === 0 && number2 % dividor === 0) {
+        return dividor;
+      }
+    }
+  }
+};
