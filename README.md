@@ -24,3 +24,7 @@ This is my first project
 
 [![asciicast](https://asciinema.org/a/9B9KSgdA2IyfirHtuvUvl6Y3q.svg)](https://asciinema.org/a/9B9KSgdA2IyfirHtuvUvl6Y3q)
 
+
+## Установка пакета и запуск игры brain-gcd
+
+[![asciicast](https://asciinema.org/a/xid6ZpuU8s1rKOuG9TuijLr8h.svg)](https://asciinema.org/a/xid6ZpuU8s1rKOuG9TuijLr8h)
