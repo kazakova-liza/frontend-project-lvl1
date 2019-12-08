@@ -102,3 +102,23 @@ export const getRightAnswerGcd = (number1, number2) => {
     }
   }
 };
+
+export const showProgression = (firstNumber, step, hiddenNumberIndex) => {
+  let progression = `${firstNumber}`;
+  let hiddenNumber = '';
+  let newNumber = firstNumber + step;
+  for (let i = 0; i < 9; i++) {
+    if (i === hiddenNumberIndex) {
+      progression += ' ..';
+      hiddenNumber = newNumber;
+    }
+    else {
+    progression += ` ${newNumber}`;
+    }
+    newNumber += step;
+  }
+  console.log(progression);
+  return hiddenNumber;
+};
+
+export const getRightAnswerProgression = (firstNumber, step, hiddenNumber) => 1;
