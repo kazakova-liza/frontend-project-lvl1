@@ -111,9 +111,8 @@ export const showProgression = (firstNumber, step, hiddenNumberIndex) => {
     if (i === hiddenNumberIndex) {
       progression += ' ..';
       hiddenNumber = newNumber;
-    }
-    else {
-    progression += ` ${newNumber}`;
+    } else {
+      progression += ` ${newNumber}`;
     }
     newNumber += step;
   }
@@ -121,4 +120,16 @@ export const showProgression = (firstNumber, step, hiddenNumberIndex) => {
   return hiddenNumber;
 };
 
-export const getRightAnswerProgression = (firstNumber, step, hiddenNumber) => 1;
+export const isPrime = (number) => {
+  if (number % 2 !== 0 && number % 3 !== 0 && number % 5 !== 0 && number % 7 !== 0) {
+    return true;
+  }
+  return false;
+};
+
+export const getRightAnswerForPrime = (number) => {
+  if (isPrime(number) === true) {
+    return 'yes';
+  }
+  return 'no';
+};

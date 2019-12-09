@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import {
-  getUserName, getAnAnswer, sayHello, checkAnswer, showMessageIfWrongAnswer, showProgression, getRightAnswerProgression,
+  getUserName, getAnAnswer, sayHello, checkAnswer, showMessageIfWrongAnswer, showProgression,
 } from '..';
 
 console.log('Welcome to the Brain Games!');
