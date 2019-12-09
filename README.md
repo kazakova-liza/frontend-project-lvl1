@@ -32,3 +32,7 @@ This is my first project
 
 ## Установка пакета и запуск игры brain-progression
 [![asciicast](https://asciinema.org/a/2h4XKaW70qUwIEKZb94E9912w.svg)](https://asciinema.org/a/2h4XKaW70qUwIEKZb94E9912w)
+
+
+## Установка пакета и запуск игры brain-prime
+[![asciicast](https://asciinema.org/a/oZkgIqvZ6kVS2NZbWPUx0r4Qm.svg)](https://asciinema.org/a/oZkgIqvZ6kVS2NZbWPUx0r4Qm)
