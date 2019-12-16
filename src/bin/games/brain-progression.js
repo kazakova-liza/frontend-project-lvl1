@@ -2,7 +2,7 @@
 
 import {
   getUserName, getAnAnswer, sayHello, checkAnswer, showMessageIfWrongAnswer, showProgression,
-} from '..';
+} from '../..';
 
 console.log('Welcome to the Brain Games!');
 console.log('What number is missing in the progression? \n');
