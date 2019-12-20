@@ -2,7 +2,7 @@
 
 import {
   getUserName, getAnAnswer, sayHello, checkAnswer, showMessageIfWrongAnswer,
-} from '.';
+} from '..';
 
 const brainEven = () => {
   console.log('Welcome to the Brain Games!');
