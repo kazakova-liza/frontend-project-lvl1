@@ -8,5 +8,5 @@ publish:
 	npm publish --dry-run
 
 make lint:
-	npx eslint src/games/brain-prime.js
+	npx eslint src/bin/brain-calc.js
 
