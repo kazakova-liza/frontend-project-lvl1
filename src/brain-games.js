@@ -1,5 +1,5 @@
 
-import { getUserName } from '..';
+import getUserName from '.';
 
 const brainGames = () => {
   getUserName();
