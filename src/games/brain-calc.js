@@ -1,9 +1,8 @@
-import { cons } from "@hexlet/pairs";
+import { cons } from '@hexlet/pairs';
 
 export const excerciseMessage = 'What is the result of the expression? \n';
 
 export const getQuestionAndRightAnswer = () => {
-
   const getRandomIntFromMinToMax = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
   const chooseOperator = (opperatorNumber) => {
