@@ -1,10 +1,12 @@
 
+import { car, cdr } from '@hexlet/pairs';
+
 import {
   getUserName, getAnAnswer, sayHello, checkAnswer, showMessageIfWrongAnswer,
 } from '..';
 
 
-const gamesEngine = (excerciseMessage, excerciseText, rightAnswer) => {
+const gamesEngine = (excerciseMessage, getQuestionAndRightAnswer) => {
   console.log('Welcome to the Brain Games!');
   console.log(excerciseMessage);
 
@@ -15,7 +17,11 @@ const gamesEngine = (excerciseMessage, excerciseText, rightAnswer) => {
   let rightAnswersCount = 0;
 
   for (rightAnswersCount = 0; rightAnswersCount < 3; rightAnswersCount += 1) {
-    console.log(excerciseText);
+    const questionAndRightAnswer = getQuestionAndRightAnswer();
+    const question = car(questionAndRightAnswer);
+    const rightAnswer = cdr(questionAndRightAnswer);
+
+    console.log(question);
 
     const answer = getAnAnswer();
 

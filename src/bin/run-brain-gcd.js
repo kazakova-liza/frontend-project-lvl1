@@ -3,7 +3,7 @@
 import gamesEngine from '../games-engine/engine';
 
 import {
-  excerciseMessage, excerciseText, rightAnswer,
+  excerciseMessage, getQuestionAndRightAnswer,
 } from '../games/brain-gcd';
 
-gamesEngine(excerciseMessage, excerciseText, rightAnswer);
+gamesEngine(excerciseMessage, getQuestionAndRightAnswer);

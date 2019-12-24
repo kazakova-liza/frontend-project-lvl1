@@ -1,13 +1,13 @@
 
+import { cons } from '@hexlet/pairs';
+
 export const excerciseMessage = 'What number is missing in the progression? \n';
 
-const firstNumber = Math.floor(Math.random() * 100);
-const step = Math.floor(Math.random() * 100);
-const hiddenNumberIndex = Math.floor(Math.random() * 10);
-
-let hiddenNumber = '';
-
-const showProgression = (firstNumber, step, hiddenNumberIndex) => {
+export const getQuestionAndRightAnswer = () => {
+  const firstNumber = Math.floor(Math.random() * 100);
+  const step = Math.floor(Math.random() * 100);
+  const hiddenNumberIndex = Math.floor(Math.random() * 10);
+  let hiddenNumber = '';
   let progression = `${firstNumber}`;
   let newNumber = firstNumber + step;
   for (let i = 0; i < 9; i++) {
@@ -19,9 +19,5 @@ const showProgression = (firstNumber, step, hiddenNumberIndex) => {
     }
     newNumber += step;
   }
-  return progression;
+  return cons(progression, hiddenNumber);
 };
-
-export const excerciseText = showProgression(firstNumber, step, hiddenNumberIndex);
-
-export const rightAnswer = hiddenNumber;
