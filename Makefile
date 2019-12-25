@@ -8,5 +8,5 @@ publish:
 	npm publish --dry-run
 
 make lint:
-	npx eslint src/bin/brain-calc.js
+	npx eslint src/bin/run-brain-calc.js
 
