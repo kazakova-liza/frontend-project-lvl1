@@ -1,6 +1,6 @@
 {
   "name": "brain-games-liza",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,12 +18,6 @@
     "url": "https://github.com/kazakova-liza/frontend-project-lvl1/issues"
   },
   "homepage": "https://github.com/kazakova-liza/frontend-project-lvl1#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "@babel/node": "^7.6.3",
-    "@babel/preset-env": "^7.6.3"
-  },
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
@@ -37,6 +31,13 @@
   ],
   "dependencies": {
     "@hexlet/pairs": "^1.0.10",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
     "babel-eslint": "^10.0.3",
     "define-properties": "^1.1.3",
     "eslint": "^6.6.0",
@@ -45,7 +46,6 @@
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jest": "^23.0.3",
     "eslint-plugin-react": "^7.17.0",
-    "readline-sync": "^1.4.10",
     "semver": "^6.3.0"
   }
 }
