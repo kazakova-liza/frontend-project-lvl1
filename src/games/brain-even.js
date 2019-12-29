@@ -1,6 +1,6 @@
 import { cons } from '@hexlet/pairs';
 
-import gamesEngine from '../games-engine/engine';
+import gamesEngine from '../engine';
 
 const excerciseMessage = 'Answer "yes" if the number is even, otherwise answer "no"\n';
 

@@ -1,6 +1,6 @@
 import { cons } from '@hexlet/pairs';
 
-import gamesEngine from '../games-engine/engine';
+import gamesEngine from '../engine';
 
 const excerciseMessage = 'Find the greatest common divisor of given numbers. \n';
 

@@ -3,7 +3,7 @@ import { car, cdr } from '@hexlet/pairs';
 
 import {
   getUserName, getAnAnswer, sayHello, checkAnswer, showMessageIfWrongAnswer,
-} from '..';
+} from '.';
 
 
 const gamesEngine = (excerciseMessage, getQuestionAndRightAnswer) => {

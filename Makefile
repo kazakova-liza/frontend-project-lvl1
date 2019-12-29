@@ -2,7 +2,7 @@ install:
 	npm install
 
 start: 
-	npx babel-node src/bin/run-brain-games.js
+	npx babel-node src/bin/run-brain-calc.js
 
 publish:
 	npm publish --dry-run

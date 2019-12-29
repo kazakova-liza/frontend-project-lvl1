@@ -1,6 +1,6 @@
 import { cons } from '@hexlet/pairs';
 
-import gamesEngine from '../games-engine/engine';
+import gamesEngine from '../engine';
 
 const excerciseMessage = 'What is the result of the expression? \n';
 
