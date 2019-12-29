@@ -1,8 +1,10 @@
 import { cons } from '@hexlet/pairs';
 
-export const excerciseMessage = 'Find the greatest common divisor of given numbers. \n';
+import gamesEngine from '../games-engine/engine';
 
-export const getQuestionAndRightAnswer = () => {
+const excerciseMessage = 'Find the greatest common divisor of given numbers. \n';
+
+const getQuestionAndRightAnswer = () => {
   const getRightAnswer = (number1, number2) => {
     if (number1 === number2) {
       return number1;
@@ -37,5 +39,10 @@ export const getQuestionAndRightAnswer = () => {
   const rightAnswer = getRightAnswer(number1, number2);
 
   return cons(excerciseText, rightAnswer);
-}
-;
+};
+
+const runBrainGcd = () => {
+  gamesEngine(excerciseMessage, getQuestionAndRightAnswer);
+};
+
+export default runBrainGcd;

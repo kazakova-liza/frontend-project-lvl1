@@ -1,9 +1,11 @@
 
 import { cons } from '@hexlet/pairs';
 
-export const excerciseMessage = 'What number is missing in the progression? \n';
+import gamesEngine from '../games-engine/engine';
 
-export const getQuestionAndRightAnswer = () => {
+const excerciseMessage = 'What number is missing in the progression? \n';
+
+const getQuestionAndRightAnswer = () => {
   const firstNumber = Math.floor(Math.random() * 100);
   const step = Math.floor(Math.random() * 100);
   const hiddenNumberIndex = Math.floor(Math.random() * 10);
@@ -21,3 +23,9 @@ export const getQuestionAndRightAnswer = () => {
   }
   return cons(progression, hiddenNumber);
 };
+
+const runBrainProgression = () => {
+  gamesEngine(excerciseMessage, getQuestionAndRightAnswer);
+};
+
+export default runBrainProgression;

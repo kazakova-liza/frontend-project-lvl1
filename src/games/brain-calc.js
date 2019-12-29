@@ -1,8 +1,10 @@
 import { cons } from '@hexlet/pairs';
 
-export const excerciseMessage = 'What is the result of the expression? \n';
+import gamesEngine from '../games-engine/engine';
 
-export const getQuestionAndRightAnswer = () => {
+const excerciseMessage = 'What is the result of the expression? \n';
+
+const getQuestionAndRightAnswer = () => {
   const getRandomIntFromMinToMax = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
   const chooseOperator = (opperatorNumber) => {
@@ -44,3 +46,9 @@ export const getQuestionAndRightAnswer = () => {
 
   return cons(excerciseText, rightAnswer);
 };
+
+const runBrainCalc = () => {
+  gamesEngine(excerciseMessage, getQuestionAndRightAnswer);
+};
+
+export default runBrainCalc;

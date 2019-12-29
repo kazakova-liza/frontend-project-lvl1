@@ -1,8 +1,10 @@
 import { cons } from '@hexlet/pairs';
 
-export const excerciseMessage = 'Answer "yes" if given number is prime. Otherwise answer "no". \n';
+import gamesEngine from '../games-engine/engine';
 
-export const getQuestionAndRightAnswer = () => {
+const excerciseMessage = 'Answer "yes" if given number is prime. Otherwise answer "no". \n';
+
+const getQuestionAndRightAnswer = () => {
   const number = Math.floor(Math.random() * 100);
   const excerciseText = number;
 
@@ -24,3 +26,9 @@ export const getQuestionAndRightAnswer = () => {
 
   return cons(excerciseText, rightAnswer);
 };
+
+const runBrainPrime = () => {
+  gamesEngine(excerciseMessage, getQuestionAndRightAnswer);
+};
+
+export default runBrainPrime;

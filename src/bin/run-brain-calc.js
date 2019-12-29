@@ -1,9 +1,5 @@
 #!/usr/bin/env node
 
-import gamesEngine from '../games-engine/engine';
+import runBrainCalc from '../games/brain-calc';
 
-import {
-  excerciseMessage, getQuestionAndRightAnswer,
-} from '../games/brain-calc';
-
-gamesEngine(excerciseMessage, getQuestionAndRightAnswer);
+runBrainCalc();

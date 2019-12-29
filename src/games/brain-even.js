@@ -1,8 +1,10 @@
 import { cons } from '@hexlet/pairs';
 
-export const excerciseMessage = 'Answer "yes" if the number is even, otherwise answer "no"\n';
+import gamesEngine from '../games-engine/engine';
 
-export const getQuestionAndRightAnswer = () => {
+const excerciseMessage = 'Answer "yes" if the number is even, otherwise answer "no"\n';
+
+const getQuestionAndRightAnswer = () => {
   const number = Math.floor(Math.random() * 10);
   const excerciseText = `Question: ${number}`;
 
@@ -17,3 +19,9 @@ export const getQuestionAndRightAnswer = () => {
 
   return cons(excerciseText, rightAnswer);
 };
+
+const runBrainEven = () => {
+  gamesEngine(excerciseMessage, getQuestionAndRightAnswer);
+};
+
+export default runBrainEven;

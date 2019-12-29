@@ -1,9 +1,9 @@
 
 import getUserName from '.';
 
-const brainGames = () => {
+const runBrainGames = () => {
   getUserName();
   console.log('Welcome to the Brain Games!');
 };
 
-export default brainGames;
+export default runBrainGames;
