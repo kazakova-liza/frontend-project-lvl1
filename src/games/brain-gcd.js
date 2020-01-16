@@ -2,6 +2,8 @@ import { cons } from '@hexlet/pairs';
 
 import gamesEngine from '../engine';
 
+import getRandomNumber from '../index';
+
 const excerciseMessage = 'Find the greatest common divisor of given numbers. \n';
 
 const getQuestionAndRightAnswer = () => {
@@ -31,8 +33,8 @@ const getQuestionAndRightAnswer = () => {
     }
   };
 
-  const number1 = Math.floor(Math.random() * 100);
-  const number2 = Math.floor(Math.random() * 100);
+  const number1 = getRandomNumber(100);
+  const number2 = getRandomNumber(100);
 
   const excerciseText = `${number1} ${number2}`;
 

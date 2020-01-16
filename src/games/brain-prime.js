@@ -2,26 +2,29 @@ import { cons } from '@hexlet/pairs';
 
 import gamesEngine from '../engine';
 
+import getRandomNumber from '../index';
+
 const excerciseMessage = 'Answer "yes" if given number is prime. Otherwise answer "no". \n';
 
+const isPrime = (number) => {
+  for (let i = 2; i < number; i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
+const getRightAnswer = (number) => {
+  if (isPrime(number) === true) {
+    return 'yes';
+  }
+  return 'no';
+};
+
 const getQuestionAndRightAnswer = () => {
-  const number = Math.floor(Math.random() * 100);
+  const number = getRandomNumber(100);
   const excerciseText = number;
-
-  const isPrime = (number) => {
-    if (number % 2 !== 0 && number % 3 !== 0 && number % 5 !== 0 && number % 7 !== 0) {
-      return true;
-    }
-    return false;
-  };
-
-  const getRightAnswer = (number) => {
-    if (isPrime(number) === true) {
-      return 'yes';
-    }
-    return 'no';
-  };
-
   const rightAnswer = getRightAnswer(number);
 
   return cons(excerciseText, rightAnswer);

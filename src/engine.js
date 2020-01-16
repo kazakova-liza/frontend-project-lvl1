@@ -1,39 +1,38 @@
 
 import { car, cdr } from '@hexlet/pairs';
 
-import {
-  getUserName, getAnAnswer, sayHello, checkAnswer, showMessageIfWrongAnswer,
-} from '.';
+import readlineSync from 'readline-sync';
 
 
 const gamesEngine = (excerciseMessage, getQuestionAndRightAnswer) => {
   console.log('Welcome to the Brain Games!');
   console.log(excerciseMessage);
 
-  const userName = getUserName();
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}! \n`);
 
-  sayHello(userName);
+  const answersForSuccess = 3;
 
   let rightAnswersCount = 0;
 
-  for (rightAnswersCount = 0; rightAnswersCount < 3; rightAnswersCount += 1) {
+  for (rightAnswersCount = 0; rightAnswersCount < answersForSuccess; rightAnswersCount += 1) {
     const questionAndRightAnswer = getQuestionAndRightAnswer();
     const question = car(questionAndRightAnswer);
     const rightAnswer = cdr(questionAndRightAnswer);
 
     console.log(question);
 
-    const answer = getAnAnswer();
+    const answer = readlineSync.question('Your answer: ');
 
-    if (checkAnswer(answer, rightAnswer.toString()) === true) {
+    if (answer === rightAnswer.toString()) {
       console.log('Correct!');
     } else {
-      showMessageIfWrongAnswer(answer, rightAnswer, userName);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.\nLet's try again, ${userName}!`);
       break;
     }
   }
 
-  if (rightAnswersCount === 3) {
+  if (rightAnswersCount === answersForSuccess) {
     console.log(`Congratulations, ${userName}!`);
   }
 };
