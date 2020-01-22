@@ -9,8 +9,6 @@ This is my first project
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/8c1cf061fd1342fa32e7/maintainability)](https://codeclimate.com/github/kazakova-liza/frontend-project-lvl1/maintainability)
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/8c1cf061fd1342fa32e7/test_coverage)](https://codeclimate.com/github/kazakova-liza/frontend-project-lvl1/test_coverage)
-
 ## Travis
 
 [![Build Status](https://travis-ci.org/kazakova-liza/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/kazakova-liza/frontend-project-lvl1)
