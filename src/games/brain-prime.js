@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 import { cons } from '@hexlet/pairs';
 
 import gamesEngine from '../engine';
