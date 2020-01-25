@@ -2,21 +2,23 @@ import { cons } from '@hexlet/pairs';
 
 import gamesEngine from '../engine';
 
-import getRandomNumber from '../index';
+import getRandomNumber from '../utils';
 
-const excerciseMessage = 'Answer "yes" if the number is even, otherwise answer "no"\n';
+const excerciseMessage = 'Answer "yes" if the number is even, otherwise answer "no"';
 
-const getRightAnswer = (number) => {
-  if (number % 2 === 0) {
-    return 'yes';
-  }
-  return 'no';
-};
+const isEven = (number) => number % 2 === 0;
 
 const getQuestionAndRightAnswer = () => {
-  const number = getRandomNumber(10);
-  const excerciseText = `Question: ${number}`;
-  const rightAnswer = getRightAnswer();
+  const number = getRandomNumber(1, 10);
+  const excerciseText = number;
+
+  let rightAnswer = '';
+  if (isEven(number) === true) {
+    rightAnswer = 'yes';
+  }
+  if (isEven(number) === false) {
+    rightAnswer = 'no';
+  }
 
   return cons(excerciseText, rightAnswer);
 };

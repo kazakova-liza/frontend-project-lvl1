@@ -3,25 +3,26 @@ import { cons } from '@hexlet/pairs';
 
 import gamesEngine from '../engine';
 
-import getRandomNumber from '../index';
+import getRandomNumber from '../utils';
 
-const excerciseMessage = 'What number is missing in the progression? \n';
+const excerciseMessage = 'What number is missing in the progression?';
 
 const getQuestionAndRightAnswer = () => {
-  const firstNumber = getRandomNumber(100);
-  const step = getRandomNumber(100);
-  const hiddenNumberIndex = getRandomNumber(10);
+  const firstNumber = getRandomNumber(1, 100);
+  const step = getRandomNumber(1, 100);
+  const hiddenNumberIndex = getRandomNumber(1, 10);
 
   let hiddenNumber = '';
   let progression = `${firstNumber}`;
   let newNumber = firstNumber + step;
+  const lastIndexOfProgression = 9;
 
-  for (let i = 0; i < 9; i++) {
+  for (let i = 0; i < lastIndexOfProgression; i++) {
     if (i === hiddenNumberIndex) {
       progression += ' ..';
       hiddenNumber = newNumber;
     } else {
-      progression += ` ${newNumber}`;
+      progression = `${progression} ${newNumber}`;
     }
     newNumber += step;
   }

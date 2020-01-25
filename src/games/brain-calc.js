@@ -2,29 +2,20 @@ import { cons } from '@hexlet/pairs';
 
 import gamesEngine from '../engine';
 
-import getRandomNumber from '../index';
+import getRandomNumber from '../utils';
 
-const excerciseMessage = 'What is the result of the expression? \n';
+const excerciseMessage = 'What is the result of the expression?';
 
-const getRandomIntFromMinToMax = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+const operators = ['+', '-', '*'];
 
 const getRandomOperator = () => {
-  const operatorNumber = getRandomIntFromMinToMax(1, 3);
-
-  switch (operatorNumber) {
-    case 1:
-      return '+';
-    case 2:
-      return '-';
-    case 3:
-      return '*';
-    default:
-  }
+  const operatorNumber = getRandomNumber(0, operators.length - 1);
+  return operators[operatorNumber];
 };
 
 const getQuestionAndRightAnswer = () => {
-  const number1 = getRandomNumber(100);
-  const number2 = getRandomNumber(100);
+  const number1 = getRandomNumber(1, 100);
+  const number2 = getRandomNumber(1, 100);
 
   let rightAnswer = '';
 
