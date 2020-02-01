@@ -28,6 +28,8 @@ Gives a progression of numbers with one hidden number. You have do determine the
 
 ## Installation
 
+Run the following command in the command line:
+
 ```
 npm install brain-games-liza
 ```
