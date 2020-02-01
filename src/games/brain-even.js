@@ -9,18 +9,11 @@ const excerciseMessage = 'Answer "yes" if the number is even, otherwise answer "
 const isEven = (number) => number % 2 === 0;
 
 const getQuestionAndRightAnswer = () => {
-  const number = getRandomNumber(1, 10);
-  const excerciseText = number;
+  const excercise = getRandomNumber(1, 10);
 
-  let rightAnswer = '';
-  if (isEven(number) === true) {
-    rightAnswer = 'yes';
-  }
-  if (isEven(number) === false) {
-    rightAnswer = 'no';
-  }
+  const rightAnswer = (isEven(excercise) === true) ? 'yes' : 'no';
 
-  return cons(excerciseText, rightAnswer);
+  return cons(excercise, rightAnswer);
 };
 
 const runBrainEven = () => {

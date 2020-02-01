@@ -13,11 +13,11 @@ const getRandomOperator = () => {
   return operators[operatorNumber];
 };
 
+let rightAnswer;
+
 const getQuestionAndRightAnswer = () => {
   const number1 = getRandomNumber(1, 100);
   const number2 = getRandomNumber(1, 100);
-
-  let rightAnswer = '';
 
   const operator = getRandomOperator();
 
@@ -34,9 +34,9 @@ const getQuestionAndRightAnswer = () => {
     default:
   }
 
-  const excerciseText = `${number1} ${operator} ${number2}`;
+  const excercise = `${number1} ${operator} ${number2}`;
 
-  return cons(excerciseText, rightAnswer);
+  return cons(excercise, rightAnswer.toString());
 };
 
 

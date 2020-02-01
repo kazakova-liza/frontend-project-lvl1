@@ -1,6 +1,6 @@
 {
   "name": "brain-games-liza",
-  "version": "6.2.1",
+  "version": "6.2.2",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -30,7 +30,6 @@
   ],
   "dependencies": {
     "@hexlet/pairs": "^1.0.10",
-    "eslint-plugin-jest": "^23.6.0",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {

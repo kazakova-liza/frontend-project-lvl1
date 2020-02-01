@@ -8,10 +8,10 @@ import getRandomNumber from '../utils';
 const excerciseMessage = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
-  if (number <= 0 || number === 1) {
+  if (number <= 1) {
     return false;
   }
-  for (let i = 2; i < number; i++) {
+  for (let i = 2; i < number / 2; i++) {
     if (number % i === 0) {
       return false;
     }
@@ -28,10 +28,10 @@ const getRightAnswer = (number) => {
 
 const getQuestionAndRightAnswer = () => {
   const number = getRandomNumber(1, 100);
-  const excerciseText = number;
+  const excercise = number;
   const rightAnswer = getRightAnswer(number);
 
-  return cons(excerciseText, rightAnswer);
+  return cons(excercise, rightAnswer);
 };
 
 const runBrainPrime = () => {
