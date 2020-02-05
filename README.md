@@ -1,5 +1,12 @@
 # frontend-project-lvl1
 
+## CodeClimate
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/8c1cf061fd1342fa32e7/maintainability)](https://codeclimate.com/github/kazakova-liza/frontend-project-lvl1/maintainability)
+
+## Travis
+
+[![Build Status](https://travis-ci.org/kazakova-liza/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/kazakova-liza/frontend-project-lvl1)
 
 ## About
 
@@ -41,14 +48,6 @@ State the name of the game in command line
 ```
 brain-even
 ```
-
-## CodeClimate
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/8c1cf061fd1342fa32e7/maintainability)](https://codeclimate.com/github/kazakova-liza/frontend-project-lvl1/maintainability)
-
-## Travis
-
-[![Build Status](https://travis-ci.org/kazakova-liza/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/kazakova-liza/frontend-project-lvl1)
 
 ## Package installation and running of brain-even
 
