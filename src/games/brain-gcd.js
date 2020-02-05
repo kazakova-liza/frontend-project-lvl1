@@ -6,9 +6,9 @@ import getRandomNumber from '../utils';
 
 const excerciseMessage = 'Find the greatest common divisor of given numbers.';
 
-const getLeastCommonDivisor = (number1, number2) => {
+const geGreatestCommonDivisor = (number1, number2) => {
   if (number1 !== 0) {
-    return getLeastCommonDivisor(number2 % number1, number1);
+    return geGreatestCommonDivisor(number2 % number1, number1);
   }
   return number2;
 };
@@ -19,7 +19,7 @@ const getQuestionAndRightAnswer = () => {
 
   const excercise = `${number1} ${number2}`;
 
-  const rightAnswer = getLeastCommonDivisor(number1, number2);
+  const rightAnswer = geGreatestCommonDivisor(number1, number2);
 
   return cons(excercise, rightAnswer);
 };

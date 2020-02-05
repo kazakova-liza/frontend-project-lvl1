@@ -12,7 +12,7 @@ const gamesEngine = (excerciseMessage, getQuestionAndRightAnswer) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!\n`);
 
-  for (let rightAnswersCount = 0; rightAnswersCount < answersForSuccess; rightAnswersCount += 1) {
+  for (let i = 0; i < answersForSuccess; i += 1) {
     const questionAndRightAnswer = getQuestionAndRightAnswer();
     const question = car(questionAndRightAnswer);
     const rightAnswer = cdr(questionAndRightAnswer);
